@@ -3,9 +3,9 @@ Para executar o programa, basta baixá-lo em seu Workspace do Eclipse, gerar o a
 Estou incluindo aqui o arquivo .WAR, caso não seja possível baixar o projeto completo.
 No browser, digital http://<seu servidor>/GeraSenhaWS
 
-Nesse ponto aparecerão 2 opções de menu:
-  1) Módulo CLIENTE
-  2) Módulo GERENTE
+Nesse ponto aparecerão 2 opções de menu: \n
+  1) Módulo CLIENTE \n
+  2) Módulo GERENTE \n
   
 Ao acionar a opção "Módulo CLIENTE", aparecem no menu 3 opções:
   1) Gerar Preferencial - acione para gerar a próxima senha preferencial
