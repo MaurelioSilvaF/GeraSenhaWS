@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://api" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://api" xmlns:intf="http://api" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://io.java" xmlns:tns2="http://core.rs.ws.javax" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="proximaSenhaRequest">
+
+      <wsdl:part name="incomingData" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="verificarServicoResponse">
+
+      <wsdl:part name="verificarServicoReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pegaSenhaAtualRequest">
+
+      <wsdl:part name="incomingData" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="zerarSenhasResponse">
+
+      <wsdl:part name="zerarSenhasReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="gerarSenhaNResponse">
+
+      <wsdl:part name="gerarSenhaNReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="senhasAtuaisResponse">
+
+      <wsdl:part name="senhasAtuaisReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="proximaSenhaResponse">
+
+      <wsdl:part name="proximaSenhaReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="verificarServicoRequest">
+
+      <wsdl:part name="incomingData" type="xsd:anyType">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="gerarSenhaPResponse">
+
+      <wsdl:part name="gerarSenhaPReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="gerarSenhaPRequest">
+
+      <wsdl:part name="incomingData" type="xsd:anyType">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="gerarSenhaNRequest">
+
+      <wsdl:part name="incomingData" type="xsd:anyType">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="senhasAtuaisRequest">
+
+      <wsdl:part name="incomingData" type="xsd:anyType">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="zerarSenhasRequest">
+
+      <wsdl:part name="incomingData" type="xsd:anyType">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pegaSenhaAtualResponse">
+
+      <wsdl:part name="pegaSenhaAtualReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="GeraSenhaRESTService">
+
+      <wsdl:operation name="gerarSenhaP" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:gerarSenhaPRequest" name="gerarSenhaPRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:gerarSenhaPResponse" name="gerarSenhaPResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="senhasAtuais" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:senhasAtuaisRequest" name="senhasAtuaisRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:senhasAtuaisResponse" name="senhasAtuaisResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="zerarSenhas" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:zerarSenhasRequest" name="zerarSenhasRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:zerarSenhasResponse" name="zerarSenhasResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="gerarSenhaN" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:gerarSenhaNRequest" name="gerarSenhaNRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:gerarSenhaNResponse" name="gerarSenhaNResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="proximaSenha" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:proximaSenhaRequest" name="proximaSenhaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:proximaSenhaResponse" name="proximaSenhaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="verificarServico" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:verificarServicoRequest" name="verificarServicoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:verificarServicoResponse" name="verificarServicoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pegaSenhaAtual" parameterOrder="incomingData">
+
+         <wsdl:input message="impl:pegaSenhaAtualRequest" name="pegaSenhaAtualRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:pegaSenhaAtualResponse" name="pegaSenhaAtualResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="GeraSenhaRESTServiceSoapBinding" type="impl:GeraSenhaRESTService">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="gerarSenhaP">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="gerarSenhaPRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="gerarSenhaPResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="senhasAtuais">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="senhasAtuaisRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="senhasAtuaisResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="zerarSenhas">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="zerarSenhasRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="zerarSenhasResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="gerarSenhaN">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="gerarSenhaNRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="gerarSenhaNResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="proximaSenha">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="proximaSenhaRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="proximaSenhaResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="verificarServico">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="verificarServicoRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="verificarServicoResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pegaSenhaAtual">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="pegaSenhaAtualRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="pegaSenhaAtualResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://api" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="GeraSenhaRESTServiceService">
+
+      <wsdl:port binding="impl:GeraSenhaRESTServiceSoapBinding" name="GeraSenhaRESTService">
+
+         <wsdlsoap:address location="http://localhost:8080/GeraSenhaWS/services/GeraSenhaRESTService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
