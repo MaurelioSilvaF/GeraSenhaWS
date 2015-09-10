@@ -22,7 +22,8 @@ import org.w3c.dom.NodeList;
 
 public class Senhas {
 
-	private static String sArquivo = "C:\\Users\\Maurelio\\workspace\\GeraSenhaWS\\src\\api\\senhas.xml";
+	 
+	private static String sArquivo = System.getProperty("java.io.tmpdir") + System.getProperty("file.separator") + "senhas.xml";
 
 
 	public static void salveConteudo(String conteudo) throws IOException {
@@ -103,6 +104,8 @@ public class Senhas {
 
 		try {
 			File fXMLFile = new File(sArquivo);
+			if (!fXMLFile.exists())
+				criarArquivoXML();
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder(); 
 			Document doc = dBuilder.parse(fXMLFile);
@@ -143,6 +146,8 @@ public class Senhas {
 
 		try {
 			File fXMLFile = new File(sArquivo);
+			if (!fXMLFile.exists())
+				criarArquivoXML();
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder(); 
 			Document doc = dBuilder.parse(fXMLFile);
@@ -191,6 +196,9 @@ public class Senhas {
 		String sVariavel = "";
 		try {
 			File fXMLFile = new File(sArquivo);
+			if (!fXMLFile.exists())
+				criarArquivoXML();
+			
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder(); 
 			Document doc = dBuilder.parse(fXMLFile);
@@ -222,7 +230,5 @@ public class Senhas {
 			e.printStackTrace();
 		}
 		return nuSenhaAtual;
-
 	}
-
 }
